@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <!-- Font Cairo -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="css/all.min.css">
+  <!-- Main File -->
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    <div class="password-random">
+      <p></p>
+      <i class="fa-regular fa-clipboard copy-text"></i>
+      <span>Copy Password</span>
+    </div>
+    <ul>
+      <li>
+        <label for="length">Password length</label>
+        <input id="length" value="4" type="number" min="4"  max="20">
+      </li>
+      <li>
+        <label for="uppercase">Include uppercase letters</label>
+        <input id="uppercase" type="checkbox" data-rand="randomUpperLetter">
+      </li>
+      <li>
+        <label for="lowercase">Include lowercase letters</label>
+        <input id="lowercase" type="checkbox" data-rand="randomLowerLetter">
+      </li>
+      <li>
+        <label for="number">Include numbers</label>
+        <input id="number" type="checkbox" data-rand="randomNum">
+      </li>
+      <li>
+        <label for="symbol">Include symbols</label>
+        <input id="symbol" type="checkbox" data-rand="randomSymbol">
+      </li>
+    </ul>
+    <div class="generate-button">
+      <button>Generate password</button>
+    </div>
+  </div>
+  <script src="My_Code.js"></script>
+</body>
+</html>
